@@ -1,0 +1,23 @@
+.l-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.l-main {
+  margin: 0 auto 40px;
+  width: $mainAreaSize;
+  max-width: 100%;
+}
+
+.l-inner {
+  padding: 0 10px;
+}
+
+.l-header {
+  margin-bottom: 20px;
+}
+
+.l-footer {
+  margin-top: auto;
+}

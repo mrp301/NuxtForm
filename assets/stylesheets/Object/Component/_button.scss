@@ -1,0 +1,66 @@
+.u-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px;
+  min-width: 272px;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 700;
+  white-space: pre-line;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+
+  &--primary {
+    @extend .u-button;
+    background: #1777bb;
+  }
+
+  &--disabled {
+    @extend .u-button;
+    background: #cfcfcf;
+
+    &:hover {
+      cursor: unset;
+      opacity: 1;
+    }
+  }
+
+  &--prev {
+    @extend .u-button;
+    font-size: 14px;
+    padding: 8px 38px;
+    background: #565656;
+    box-shadow: 0 3px 0 0 #1c1c1c;
+
+    &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-135deg);
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    }
+  }
+}

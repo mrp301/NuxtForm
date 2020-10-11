@@ -1,0 +1,13 @@
+.c-input {
+  display: block;
+  padding: 9px 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 14px;
+
+  &.is-error {
+    border: 2px solid #df0200;
+  }
+}

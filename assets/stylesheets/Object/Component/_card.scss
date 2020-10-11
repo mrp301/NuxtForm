@@ -1,0 +1,15 @@
+.u-card {
+  padding: 10px 10px 20px;
+  border: 1px solid #cfcfcf;
+  border-top: 2px solid #e74d59;
+  background-color: #fff;
+
+  &__header {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px dotted #cfcfcf;
+    line-height: 1.6;
+  }
+}

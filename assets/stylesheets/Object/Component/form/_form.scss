@@ -1,0 +1,17 @@
+.u-formList {
+  li {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    & > * {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
